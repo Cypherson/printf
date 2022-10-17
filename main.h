@@ -62,4 +62,4 @@ char *fill_hex_array(char *bnr, char *hex, int isupp, int limit);
 
 int ev_print_func(const char *s, int index);
 
-#endif
+#endif /*MAIN_H*/
