@@ -1,9 +1,7 @@
 #include "main.h"
-
 /**
  * _printf - formatted output conversion and print data.
  * @format: input string.
- *
  * Return: number of chars printed.
  */
 int _printf(const char *format, ...)
@@ -18,7 +16,6 @@ int _printf(const char *format, ...)
 		return (-1);
 	if (!format[i])
 		return (0);
-
 	for (i = 0; format && format[i]; i++)
 	{
 		if (format[i] == '%')
@@ -46,11 +43,9 @@ int _printf(const char *format, ...)
 		}
 		else
 			handl_buf(buffer, format[i], ibuf), len++;
-
 		for (ibuf = len; ibuf > 1024; ibuf -= 1024)
 			;
 	}
-
 	print_buf(buffer, ibuf), free(buffer), va_end(arguments);
 	return (len);
 }
