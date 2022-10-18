@@ -9,7 +9,7 @@
  */
 int prinhint(va_list arguments, char *buf, unsigned int ibuf)
 {
-	short int in_input;
+	short int int_input;
 	unsigned short int int_in, int_temp, i, div, isneg;
 
 	int_input = va_arg(arguments, int);

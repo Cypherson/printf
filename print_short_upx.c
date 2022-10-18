@@ -31,7 +31,7 @@ int prinhupx(va_list arguments, char *buf, unsigned int ibuf)
 	hexadecimal = malloc(sizeof(char) * (4 + 1));
 	hexadecimal = fill_hex_array(binary, hexadecimal, 1, 4);
 
-	for (first_digit = i count = 0; hexadecimal[i]; i++)
+	for (first_digit = i = count = 0; hexadecimal[i]; i++)
 	{
 		if (hexadecimal[i] != '0' && first_digit == 0)
 			first_digit = 1;
