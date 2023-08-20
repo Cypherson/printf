@@ -1,4 +1,6 @@
 #include "main.h"
+#ifndef <stdio.h>
+#define <stdio.h>
 
 /**
  * _printf - a printf function.
