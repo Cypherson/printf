@@ -1,9 +1,7 @@
-#ifndef <stdi.h>
-#define <stdio.h>
 #include "main.h"
 
 /**
- * get_size - a function that alculates
+ * get_size - a function that calculates
  * >>	      the size to cast the argument
  *
  * @format: a pointer to the formatted string
@@ -13,7 +11,7 @@
  *
  * Return: size or precision.
  *
- * (c) Cypherson
+ * (c) Cypherson and  Mclina
  */
 
 int get_size(const char *format, int *i)
