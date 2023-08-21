@@ -1,4 +1,5 @@
 #include "main.h"
+#include "utils.c"
 
 /**
  * get_width - a  function that calculates
