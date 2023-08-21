@@ -1,6 +1,21 @@
 #include "main.h"
-#ifndef <stdio.h>
-#define <stdio.h>
+
+/**
+ * print_buffer - prints the contents of the buffer if it exist
+ *
+ * @buffer: Array of characters
+ *
+ * @buff_ind: Index at which to add next char, represents the length of buffer.
+ */
+
+
+void print_buffer(char buffer[], int *buff_ind)
+{
+        if (*buff_ind > 0)
+                write(1, &buffer[0], *buff_ind);
+
+        *buff_ind = 0;
+
 
 /**
  * _printf - a printf function.
@@ -26,7 +41,7 @@ int _printf(const char *format, ...)
 
 	for (index = 0; format && format[index] != '\0'; index++)
 	{
-		if (format[i] != '%')
+		if (format[index] != '%')
 		{
 			buffer[buff_ind++] = format[index];
 			if (buff_ind == BUFF_SIZE)
@@ -50,26 +65,8 @@ int _printf(const char *format, ...)
 	}
 
 	print_buffer(buffer, &buff_ind);
-
+	
 	va_end(list);
 
 	return (printed_char);
-}
-
-
-/**
- * print_buffer - prints the contents of the buffer if it exist
- *
- * @buffer: Array of characters
- *
- * @buff_ind: Index at which to add next char, represents the length of buffer.
- */
-
-
-void print_buffer(char buffer[], int *buff_ind)
-{
-	if (*buff_ind > 0)
-		write(1, &buffer[0], *buff_ind);
-
-	*buff_ind = 0;
 }
