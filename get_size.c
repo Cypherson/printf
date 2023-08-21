@@ -1,5 +1,3 @@
-#ifndef <stdi.h>
-#define <stdio.h>
 #include "main.h"
 
 /**

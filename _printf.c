@@ -1,6 +1,4 @@
 #include "main.h"
-#ifndef <stdio.h>
-#define <stdio.h>
 
 /**
  * _printf - a printf function.
@@ -26,7 +24,7 @@ int _printf(const char *format, ...)
 
 	for (index = 0; format && format[index] != '\0'; index++)
 	{
-		if (format[i] != '%')
+		if (format[index] != '%')
 		{
 			buffer[buff_ind++] = format[index];
 			if (buff_ind == BUFF_SIZE)
