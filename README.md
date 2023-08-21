@@ -1,1 +1,116 @@
-This repo will contain files used for the _printf clone project; an ALX GROUP PROJECT
+0x11. C - printf
+
+This is the first group project at  ALX SE, which consists of replicating the printf (3) function of language c,( _printf)
+by Aliu Hilary [Cypherson] and 
+Mariacelin Oshiomah [Mclina]
+
+printf is a function in the C programming language that is used to print formatted output to the standard output stream (stdout). The function is defined in the stdio.h header file and has the following syntax:
+
+int printf(const char *format, ...);
+
+Functions we use.
+int _putchar(char c); /*writes the character c to stdout */
+int _printf(const char *format, ...);/* function that produces output according to a format.*/
+int print_char(va_list c);/*writes the character c to stdout */
+int print_string(va_list s);/*writes the character c to stdout */
+int print_int(va_list i);/*function that prints an integer */
+int print_dec(va_list d);/* function that prints an decimal*/
+Flowchart.
+How to use.
+Complilation
+All of the .c files along with a main.c file are to be compiled with gcc 4.8.4 on Ubuntu 14.04 LTS with the flags -Wall Werror -Westra and -pedantic.
+
+The files will be compiled this way:
+
+gcc -Wall -Werror -Wextra -pedantic *.c
+Use.
+In the main.c file, use the _printf function like so:
+
+#include "holberton.h"
+/**
+ * main - main function of program
+ * Return: always 0
+ */
+int main(void)
+{
+	int num;
+	char *string;
+	
+	num = 98;
+	string = "Hello, Holberon!"
+	_printf("%s is %i.\n", string, num);
+	return (0);
+}
+linux>$  gcc -Wall -Werror -Wextra -pedantic *.c -o print_program
+linux>$  ./print_program
+Hello, Holberton is 98.
+linux>$
+
+
+
+TASKS
+0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm
+ a Spur for life                                                                    
+Write a function that produces output according to a format.                        
+                                                                                    
+                                                                                    
+1. Education is when you read the fine print. Experience is what you get if you don'
+t                                                                                   
+Handle the following conversion specifiers:
+
+2. With a face like mine, I do better in print                                      
+Handle the following custom conversion specifiers:                                  
+                                                                                    
+3. What one has not experienced, one will never understand in print                 
+Handle the following conversion specifiers:                                         
+                                                                                    
+4. Nothing in fine print is ever good news                                          
+Use a local buffer of 1024 chars in order to call write as little as possible.      
+                                                                                    
+5. My weakness is wearing too much leopard print                                    
+Handle the following custom conversion specifier:                                   
+                                                                                    
+6. How is the world ruled and led to war? Diplomats lie to journalists and believe t
+hese lies when they see them in print                                               
+Handle the following conversion specifier: p.                                       
+                                                                                    
+7. The big print gives and the small print takes away                               
+Handle the following flag characters for non-custom conversion specifiers:          
+                                                                                    
+8. Sarcasm is lost in print                                                         
+Handle the following length modifiers for non-custom conversion specifiers:         
+                                                                                    
+l                                                                                   
+h                                                                                   
+Conversion specifiers to handle: d, i, u, o, x, X                                   
+                                                                                    
+9. Print some money and give it to us for the rain forests                          
+Handle the field width for non-custom conversion specifiers.                        
+                                                                                    
+10. The negative is the equivalent of the composer's score, and the print the perfor
+mance                                                                               
+Handle the precision for non-custom conversion specifiers.                          
+                                                                                    
+11. It's depressing when you're still around and your albums are out of print       
+Handle the 0 flag character for non-custom conversion specifiers.                   
+                                                                                    
+12. Every time that I wanted to give up, if I saw an interesting textile, print what
+ ever, suddenly I would see a collection                                            
+Handle the - flag character for non-custom conversion specifiers.                   
+                                                                                    
+13. Print is the sharpest and the strongest weapon of our party                     
+Handle the following custom conversion specifier:                                   
+                                                                                    
+14. The flood of print has turned reading into a process of gulping rather than savo
+ring                                                                                
+Handle the following custom conversion specifier:                                   
+                                                                                    
+15. *                                                                               
+All the above options work well together. 
+
+
+Contributors
+
+Aliu Hilary [Cypherson] and 
+Mariacelin Oshiomah [Mclina]
+

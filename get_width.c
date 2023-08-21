@@ -7,13 +7,13 @@
  * @format: a pointer to the formatted
  * >>	    string in which to print the arguments.
  *
- * @i: is a pointer to the ist of arguments to be printed.
+ * @i: is a pointer to the list of arguments to be printed.
  *
  * @list: list of arguments.
  *
  * Return: the width.
  *
- * (c) Cypherson
+ * (c) Cypherson and Mclina
  */
 
 int get_width(const char *format, int *i, va_list list)
