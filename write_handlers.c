@@ -2,23 +2,14 @@
 
 /**
  * write_pointer - writes a memory address
- *
  * @buffer: arrays of characterss
- *
  * @ind: Index at which the number starts in the buffer
- *
  * @length: length of number
- *
  * @width: Wwidth specifier
- *
  * @flags: Flags specifier
- *
  * @padd: Char representing the padding
- *
  * @extra_c: Char representing extra char
- *
  * @padd_start: Index at which padding should start
- *
  * Return: Number of written chars.
  */
 int write_pointer(char buffer[], int ind, int length,
@@ -67,19 +58,12 @@ int write_pointer(char buffer[], int ind, int length,
 
 /**
  * write_unsgnd - Writes an unsigned int
- *
  * @is_negative: var that checks if the num is negative
- *
  * @ind: Index at which the number starts in the buffer
- *
  * @buffer: an rray of characters
- *
  * @flags: Flags specifiers
- *
  * @width: Width specifier
- *
  * @precision: Precision specifier
- *
  * @size: Size specifier
  *
  * Return: Number of written chars.
@@ -135,23 +119,14 @@ int write_unsgnd(int is_negative, int ind,
 
 /**
  * write_num - Wwites numbers using a bufffer
- *
  * @ind: Index at where the number starts on the buffer
- *
  * @buffer: Buffer
- *
  * @flags: Flags
- *
  * @width: width
- *
  * @prec: Precision specifier
- *
  * @length: Number length
- *
  * @padd: Pading char
- *
  * @extra_c: Extra char
- *
  * Return: Number of printed chars.
  */
 int write_num(int ind, char buffer[],
@@ -203,23 +178,14 @@ int write_num(int ind, char buffer[],
 
 /**
  * write_number - a function that prints strings
- *
  * @is_negative: list of arguments
- *
  * @ind: char types.
- *
  * @buffer: Buffer array to handle print
- *
  * @flags:  Calculates active flags
- *
  * @width: get width.
- *
  * @precision: precision specifier
- *
  * @size: Size specifier
- *
  * Return: Number of chars printed.
- *
  * (c) Cypherson
  */
 
@@ -247,21 +213,13 @@ int write_number(int is_negative, int ind, char buffer[],
 
 /**
  * handle_write_char - Prints a string
- *
  * @c: character types.
- *
  * @buffer: Buffer array to handle print
- *
  * @flags:  Calculates active flags.
- *
  * @width: get width.
- *
  * @precision: precision specifier
- *
  * @size: Size specifier
- *
  * Return: Number of chars printed.
- *
  * (c) Cypherson
  */
 int handle_write_char(char c, char buffer[],

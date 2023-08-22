@@ -12,7 +12,7 @@
  *
  * Return: Always 3 on success
  *
- * (c) Cypherson
+ * (c) Cypherson and Mclina
  */
 int append_hexa_code(char ascii_code, char buffer[], int i)
 {
@@ -37,7 +37,7 @@ int append_hexa_code(char ascii_code, char buffer[], int i)
  *
  * Return: 1 if c is a digit, 0 otherwise
  *
- * (c) Cypherson
+ * (c) Cypherson and Mclina
  */
 int is_digit(char c)
 {
@@ -56,7 +56,7 @@ int is_digit(char c)
  *
  * Return: 1 if c is printable, 0 otherwise
  *
- * (c) Cypherson
+ * (c) Cypherson and Mclina
  */
 
 int is_printable(char c)
@@ -77,7 +77,7 @@ int is_printable(char c)
  *
  * Return: Cast value of number
  *
- * (c) Cypherson
+ * (c) Cypherson and Mclina 
  */
 
 
@@ -101,7 +101,7 @@ long int convert_size_unsgnd(unsigned long int num, int size)
  *
  * Return: Cast value of number
  *
- * (c) Cypherson
+ * (c) Cypherson and Mclina
  */
 long int convert_size_number(long int num, int size)
 {

@@ -24,7 +24,7 @@ void print_buffer(char buffer[], int *buff_ind)
  *
  * Return: a pointer to printed characters.
  *
- * (c) Cypherson
+ * (c) Cypherson and Mclina
  */
 
 int _printf(const char *format, ...)

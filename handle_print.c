@@ -22,7 +22,7 @@
  *
  * Return: 1 or 2;
  *
- * (c) Cypherson
+ * (c) Cypherson and Mclina
  */
 
 int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
@@ -60,4 +60,4 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 		return (unknow_len);
 	}
 	return (printed_chars);
-
+}
