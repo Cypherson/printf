@@ -15,8 +15,12 @@ int print_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	char c = va_arg(types, int);
+<<<<<<< HEAD
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
+=======
+return (handle_write_char(c, buffer, flags, width, precision, size));
+>>>>>>> 3ce2c77eb4ee9ccd880ad1c3b4d7ee3a5eb80e52
 }
 /************************* PRINT A STRING *************************/
 /**
@@ -34,7 +38,11 @@ int print_string(va_list types, char buffer[],
 {
 	int length = 0, i;
 	char *str = va_arg(types, char *);
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 3ce2c77eb4ee9ccd880ad1c3b4d7ee3a5eb80e52
 	UNUSED(buffer);
 	UNUSED(flags);
 	UNUSED(width);
@@ -106,6 +114,7 @@ int print_int(va_list types, char buffer[],
 	int i = BUFF_SIZE - 2;
 	int is_negative = 0;
 	long int n = va_arg(types, long int);
+	
 	unsigned long int num;
 	n = convert_size_number(n, size);
 	if (n == 0)
@@ -140,6 +149,7 @@ int print_binary(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	unsigned int n, m, i, sum;
+	
 	unsigned int a[32];
 	int count;
 
@@ -160,6 +170,7 @@ int print_binary(va_list types, char buffer[],
 	for (i = 0, sum = 0, count = 0; i < 32; i++)
 	{
 		sum += a[i];
+		
 		if (sum || i == 31)
 		{
 			char z = '0' + a[i];
