@@ -17,7 +17,7 @@
 int append_hexa_code(char ascii_code, char buffer[], int i)
 {
 	char put[] = "0123456789ABCDEF";
-	
+
 	if (ascii_code < 0)
 		ascii_code *= -1;
 
