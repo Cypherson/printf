@@ -63,7 +63,7 @@ int is_printable(char c)
  * @num: number to put.
  * @size: value indicating the type to put
  * Return: Cast value of number
- * (c) Cypherson and Mclina 
+ * (c) Cypherson and Mclina
  */
 long int convert_size_unsgnd(unsigned long int num, int size)
 {

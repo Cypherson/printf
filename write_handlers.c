@@ -22,7 +22,7 @@ int write_pointer(char buffer[], int ind, int length,
 		for (index = 3; index < width - length + 3; ++index)
 			buffer[index] = padd;
 		buffer[index] = '\0';
-		if (flags & F_MINUS && padd == ' ')/*asign an extra character to left of the buffer*/
+		if (flags & F_MINUS && padd == ' ')
 		{
 			buffer[--ind] = 'x';
 			buffer[--ind] = '0';
